@@ -10,7 +10,7 @@
 	<body>
 		<%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
 		
-		<c:url value="/attacks/xss/prepareXSS.html" var="url" />
+		<c:url value="prepareXSS.html" var="url" />
 		<a href="${url}">		
 			<img src="../../images/back-icon.png" alt="Return to examples page" class="back"/>
 		</a>
