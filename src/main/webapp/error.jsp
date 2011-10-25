@@ -55,7 +55,7 @@ background:#FFF;
 <body>
 <div id="errorCabecera"><img src="http://hdiv.org/img/logo.gif" />
 	<div id="errorMensaje"><p>Unauthorized access</p></div>
-	<div id="errorPie"><p>&copy; 2005-2007 hdiv.org</p>
+	<div id="errorPie"><p>&copy; 2005-2011 hdiv.org</p>
 </div>
 </div>
 </body>
