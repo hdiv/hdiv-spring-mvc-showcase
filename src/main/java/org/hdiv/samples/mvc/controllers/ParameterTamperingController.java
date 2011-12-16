@@ -27,6 +27,15 @@ public class ParameterTamperingController {
 	@Autowired
 	private AttacksExampleFacade attacksExampleFacade;
 
+	@RequestMapping(value = { "/attacks/parameterTampering/prepareSelectFieldTampering",
+			"/secure/parameterTampering/prepareSelectFieldTampering" })
+	public String prepareSelectFieldTampering(Model model) {
+		Order order = new Order();
+		order.setUsername("j2ee");
+		model.addAttribute("order", order);
+		return "/attacks/parameterTampering/SelectFieldTampering";
+	}
+
 	@RequestMapping(value = { "/attacks/parameterTampering/prepareHiddenFieldTampering",
 			"/secure/parameterTampering/prepareHiddenFieldTampering" })
 	public String prepareHiddenFieldTampering(Model model) {
@@ -35,10 +44,10 @@ public class ParameterTamperingController {
 		model.addAttribute("order", order);
 		return "/attacks/parameterTampering/HiddenFieldTampering";
 	}
-	
+
 	@RequestMapping(value = { "/attacks/parameterTampering/prepareLinkTampering",
-	"/secure/parameterTampering/prepareLinkTampering" })
-		public String prepareLinkTampering(Model model) {
+			"/secure/parameterTampering/prepareLinkTampering" })
+	public String prepareLinkTampering(Model model) {
 		return "/attacks/parameterTampering/LinkParamTampering";
 	}
 

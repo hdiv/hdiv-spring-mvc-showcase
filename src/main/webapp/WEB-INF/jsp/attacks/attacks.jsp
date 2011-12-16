@@ -29,12 +29,18 @@
 		<!--  Parameter Tampering examples -->
 		<%@include file="parameterTampering/ParameterTampering.html" %>
 		<br />
+		<spring:url value="parameterTampering/prepareSelectFieldTampering.html" var="url" />
+		<a href="${url}">
+			<img src="../images/Play.png" class="play" />
+			How to Exploit Select Form fields
+		</a>
+		<br />
 		<spring:url value="parameterTampering/prepareHiddenFieldTampering.html" var="url" />
 		<a href="${url}">
 			<img src="../images/Play.png" class="play" />
-			How to Exploit Form fields
+			How to Exploit Hidden Form fields
 		</a>
-		<br>
+		<br />
 		<spring:url value="parameterTampering/prepareLinkTampering.html" var="url" />
 		<a href="${url}">
 			<img src="../images/Play.png" class="play" />
