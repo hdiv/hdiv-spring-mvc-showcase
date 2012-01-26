@@ -10,7 +10,7 @@
 	<properties>
 		<org.springframework-version>3.1.0.RELEASE</org.springframework-version>
 		<org.slf4j-version>1.6.1</org.slf4j-version>
-		<org.hdiv-version>2.1.0.RC3</org.hdiv-version>
+		<org.hdiv-version>2.1.0</org.hdiv-version>
 	</properties>
 
 	<build>
@@ -125,17 +125,5 @@
 			<version>${org.hdiv-version}</version>
 		</dependency>
 	</dependencies>
-	<repositories>
-		<repository>
-			<id>spring-milestone</id>
-			<name>Spring Maven MILESTONE Repository</name>
-			<url>http://maven.springframework.org/milestone</url>
-		</repository>
-		<repository>
-			<id>spring-maven-snapshot</id>
-			<snapshots><enabled>true</enabled></snapshots>
-			<name>Springframework Maven SNAPSHOT Repository</name>
-			<url>http://maven.springframework.org/snapshot</url>
-		</repository>
-	</repositories>
+	
 </project>
