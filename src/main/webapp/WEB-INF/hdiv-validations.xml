@@ -35,7 +35,7 @@ http://www.hdiv.org/schema/hdiv http://www.hdiv.org/schema/hdiv/hdiv.xsd">
 	
      <!-- Finally, it's necessary to define editable data validation list for the application -->
 	<hdiv:editableValidations>
-		<hdiv:validationRule url=".*">safeText,SQLInjection,execCommand,simpleXSS,imageXSS,scriptXSS,evalXSS</hdiv:validationRule>
+		<hdiv:validationRule url="/secure/.*">safeText,SQLInjection,execCommand,simpleXSS,imageXSS,scriptXSS,evalXSS</hdiv:validationRule>
 	</hdiv:editableValidations>
 
 </beans>
