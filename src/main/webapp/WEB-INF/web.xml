@@ -9,7 +9,6 @@
 		<param-value>
 			/WEB-INF/dataAccess-config.xml
 			/WEB-INF/hdiv-config.xml
-			/WEB-INF/hdiv-validations.xml
 		</param-value>
 	</context-param>
 
