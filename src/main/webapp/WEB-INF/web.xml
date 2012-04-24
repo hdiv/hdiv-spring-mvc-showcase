@@ -8,6 +8,7 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
 			/WEB-INF/dataAccess-config.xml
+			/WEB-INF/security-config.xml
 			/WEB-INF/hdiv-config.xml
 		</param-value>
 	</context-param>
@@ -16,7 +17,8 @@
 	<listener>
 		<listener-class>org.hdiv.listener.InitListener</listener-class>
 	</listener>
-	<!-- HDIV Validator Filter -->
+	<!-- HDIV Validator Filter 
+	HDIV filter configuration without Spring Security filter chain
 	<filter>
 		<filter-name>ValidatorFilter</filter-name>
 		<filter-class>org.hdiv.filter.ValidatorFilter</filter-class>
@@ -24,6 +26,16 @@
 	<filter-mapping>
 		<filter-name>ValidatorFilter</filter-name>
 		<servlet-name>SampleMvc</servlet-name>
+	</filter-mapping>
+	-->
+	<!-- String security -->
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 	<!-- Spring MVC Servlet -->
 	<servlet>

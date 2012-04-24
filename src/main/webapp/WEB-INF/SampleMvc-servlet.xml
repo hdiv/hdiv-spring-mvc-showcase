@@ -19,6 +19,8 @@
     <mvc:view-controller path="/welcome.html" view-name="welcome"/>
     <mvc:view-controller path="/attacks/attacks.html" view-name="/attacks/attacks"/>
     <mvc:view-controller path="/secure/attacks.html" view-name="/attacks/attacks"/>
+    <mvc:view-controller path="/login.html" view-name="/login"/>
+    <mvc:view-controller path="/authenticated/info.html" view-name="/authenticated/info"/>
 
 	<!--
 		- The controllers are autodetected POJOs labeled with the @Controller annotation.

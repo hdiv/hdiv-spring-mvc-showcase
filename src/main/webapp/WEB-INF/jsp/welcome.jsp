@@ -25,12 +25,17 @@
 
 	<h2>
 		<c:url value="/secure/attacks.html" var="url" />
-		<a href="${url}">
-		Vulnerable Example Section resolved by HDIV
-		</a>
+		<a href="${url}"> Vulnerable Example Section resolved by HDIV </a>
 	</h2>
 	<p>This section is a demonstration of common web application flaws
 		but they are resolved by HDIV.</p>
+
+	<h2>
+		<c:url value="/authenticated/info.html" var="url" />
+		<a href="${url}"> Authenticated Section </a>
+	</h2>
+	<p>Application authenticated zone. Secured with Spring Security.</p>
+
 	<%@ include file="/WEB-INF/jsp/template/footer.jsp"%>
 </body>
 </html>

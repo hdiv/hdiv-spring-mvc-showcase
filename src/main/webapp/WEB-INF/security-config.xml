@@ -1,0 +1,31 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security" xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+			http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<security:http auto-config="true">
+		<security:form-login login-page="/login.html" />
+		<security:custom-filter before="FIRST" ref="hdivFilter" />
+		<security:intercept-url access="ROLE_USER"
+			pattern="/authenticated/**" />
+	</security:http>
+
+	<bean id="hdivFilter" class="org.hdiv.filter.ValidatorFilter" />
+
+	<security:authentication-manager>
+		<security:authentication-provider>
+			<security:user-service>
+				<security:user name="david" authorities="ROLE_USER,ROLE_ADMIN"
+					password="david" />
+				<security:user name="alex" authorities="ROLE_USER"
+					password="alex" />
+				<security:user name="tim" authorities="ROLE_USER"
+					password="tim" />
+			</security:user-service>
+		</security:authentication-provider>
+	</security:authentication-manager>
+
+</beans>
