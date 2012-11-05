@@ -25,6 +25,11 @@
 		out.println(user.getUsername());
 		%>
 		
+		<p>
+		<c:url value="/logout.html" var="url" />
+		<a href="${url}">Logout</a>
+		</p>
+		
 		<%@ include file="/WEB-INF/jsp/template/footer.jsp"%>
 	</body>
 </html>
