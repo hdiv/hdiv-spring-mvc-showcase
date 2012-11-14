@@ -12,9 +12,8 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <!-- JSR-303 support will be detected on classpath and enabled automatically -->
-    <mvc:annotation-driven validator="editableValidator"/>
-    
-	<bean id="editableValidator" class="org.hdiv.web.validator.EditableParameterValidator"/>
+    <!-- 'hdivEditableValidator' is the predefined bean for Editable Validation -->
+    <mvc:annotation-driven validator="hdivEditableValidator"/>
     
     <mvc:view-controller path="/welcome.html" view-name="welcome"/>
     <mvc:view-controller path="/attacks/attacks.html" view-name="/attacks/attacks"/>
