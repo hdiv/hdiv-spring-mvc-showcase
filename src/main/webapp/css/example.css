@@ -16,6 +16,11 @@ h2 {
 	font-size: 20px;
 }
 
+h2.subtitle {
+	text-align: center;
+	font-weight: bold;
+}
+
 h3 {
 	font-size: 18px;
 	margin: 2em 0 0.5em;
@@ -89,7 +94,6 @@ a {
 .icon {
 	float: right;
 	margin: 5px;
-	padding: 40px 25px;
 }
 
 .intro {
@@ -106,4 +110,45 @@ a {
 .result {
 	width: 100%;
 	background: #eef;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	border: 1px solid #c3c3c3;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table th {
+	background-color: #CCCCCC;
+	border: 1px solid #c3c3c3;
+	padding: 3px;
+	vertical-align: top;
+	text-align: center;
+}
+
+table td {
+	border: 1px solid #c3c3c3;
+	padding: 3px;
+	vertical-align: top;
+}
+
+div.centerText {
+	text-align: center;
+}
+
+form fieldset {
+	border: 1px solid #c3c3c3;
+	width: 400px;
+	margin: auto;
+}
+
+form label {
+	width: 14em;
+	float: left;
+	text-align: right;
+	margin-right: 0.5em;
+	display: block
 }

@@ -1,6 +1,6 @@
-<%@ page contentType="text/html; charset=ISO-8859-1" language="java" errorPage="" %>
+<!DOCTYPE html>
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
-<html xmlns="http://www.w3.org/1999/xhtml">	
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Auto Binding</title>
@@ -16,61 +16,58 @@
 		</a>
 	
 		<h1>Modify Order</h1>
-		<hr noshade="noshade"/>
 			
-		<center><font size="5"><b>${order.username}'s  ${order.orderId}  Order</b></font></center>
-		<br></br>
+		<h2 class="subtitle">${order.username}'s  ${order.orderId}  Order</h2>
+
 		<form:form action="../../updateAutoBinding.html" commandName="order">
+			<fieldset>
+				<p>
+					<label>Order Date:</label>
+					${order.orderDate}
+				</p>
+				<p>
+					<label for="shipAddress1">Ship Address 1:</label>
+					<form:input path="shipAddress1"/>
+				</p>
+				<p>
+					<label for="shipAddress2">Ship Address 2:</label>
+					<form:input  path="shipAddress2"/>
+				</p>
+				<p>
+					<label for="shipCity">Ship City:</label>
+					<form:input path="shipCity"/>
+				</p>
+				<p>
+					<label for="shipState">Ship State:</label>
+					<form:input path="shipState"/>
+				</p>
+				<p>
+					<label for="shipZip">Ship Zip:</label>
+					<form:input path="shipZip"/>
+				</p>
+				<p>
+					<label for="shipCountry">Ship Country:</label>
+					<form:input path="shipCountry"/>
+				</p>
+				<p>
+					<label for="creditCard">Credit Card:</label>
+					<form:input path="creditCard"/>
+				</p>
+				<p>
+					<label for="expiryDate">Expire Date:</label>
+					<form:input path="expiryDate"/>
+				</p>
+				<p>
+					<label for="cardType">Card type:</label>
+					<form:input path="cardType"/>
+				</p>
+			</fieldset>
 		
-			<table align="center" border="0" cellspacing="10">				
-				<tr>
-					<td ><b>Order Date:</b></td>
-					<td> <i>${order.orderDate}</i></td>
-				</tr>				
-				<tr>
-					<td ><b>Ship Address 1:</b></td>
-					<td><form:input path="shipAddress1"/></td>
-				</tr>
-				<tr>
-					<td ><b>Ship Address 2:</b></td>
-					<td><form:input path="shipAddress2"/></td>
-				</tr>				
-				<tr>
-					<td ><b>Ship City:</b></td>
-					<td><form:input path="shipCity"/></td>
-				</tr>
-				<tr>
-					<td ><b>Ship State:</b></td>
-					<td><form:input path="shipState"/></td>
-				</tr>
-				<tr>
-					<td ><b>Ship Zip:</b></td>
-					<td><form:input path="shipZip"/></td>
-				</tr>
-				<tr>
-					<td ><b>Ship Country:</b></td>
-					<td><form:input path="shipCountry"/></td>
-				</tr>
-				<tr>
-					<td ><b>Credit Card:</b></td>
-					<td><form:input path="creditCard"/></td>
-				</tr>
-				<tr>
-					<td ><b>Expire Date:</b></td>
-					<td><form:input path="expiryDate"/></td>
-				</tr>
-				<tr>
-					<td ><b>Card type:</b></td>
-					<td><form:input path="cardType"/></td>
-				</tr>
-			</table>
-			<center>
-			<br/>
-			<p>Once the form is posted, create the attribute <b>paid</b> and set it to <b>"true"</b>. This will cause the order to figure as paid.</p>
-			<br/>
-			
-			<form:button>Save</form:button>
-			</center>
+			<div class="centerText">
+				<p>Once the form is posted, create the attribute <b>paid</b> and set it to <b>"true"</b>. This will cause the order to figure as paid.</p>
+				
+				<form:button>Save</form:button>
+			</div>
 			<form:hidden path="username"></form:hidden>
 			<form:hidden path="orderId"></form:hidden>
 		</form:form>

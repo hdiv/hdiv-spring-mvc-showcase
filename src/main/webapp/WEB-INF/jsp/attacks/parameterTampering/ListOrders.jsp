@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
-<html xmlns="http://www.w3.org/1999/xhtml">	
+<html>	
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>SQL Injection Example</title>
@@ -12,26 +13,25 @@
 		</a>
 		
 		<h1>How to Exploit Hidden Fields</h1>
-		<hr noshade="noshade"/>
 
-		<center><font size="4"><b>"My" Orders</b></font></center>
-		<table align="center" border="1" cellspacing="2">
-			<tr bgcolor="#CCCCCC">
-				<td><b>Order ID</b></td>
-				<td><b>User ID</b></td>
-				<td><b>Order Date</b></td>				
-				<td><b>Ship Adress 1</b></td>
-				<td><b>Ship Adress 2</b></td>				
-				<td><b>Ship City</b></td>
-				<td><b>Ship State</b></td>
-				<td><b>Ship Zip</b></td>
-				<td><b>Ship Country</b></td>
-				<td><b>Creadit Card</b></td>
-				<td><b>Expiry Date</b></td>
-				<td><b>Card type</b></td>
+		<h2 class="subtitle">"My" Orders</h2>
+		<table>
+			<tr>
+				<th>Order ID</th>
+				<th>User ID</th>
+				<th>Order Date</th>				
+				<th>Ship Adress 1</th>
+				<th>Ship Adress 2</th>				
+				<th>Ship City</th>
+				<th>Ship State</th>
+				<th>Ship Zip</th>
+				<th>Ship Country</th>
+				<th>Creadit Card</th>
+				<th>Expiry Date</th>
+				<th>Card type</th>
 			</tr>
 			<c:forEach items="${orderList}" var="order">
-				<tr align="center"> 
+				<tr> 
 					<td>${order.orderId}</td>
 					<td>${order.username}</td>
 					<td>${order.orderDate}</td>					

@@ -1,7 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE html>
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
-<html xmlns="http://www.w3.org/1999/xhtml">	
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Parameter Tampering Example</title>
@@ -14,7 +13,6 @@
 		</a>
 	
 		<h1>How to Exploit Form Fields</h1>
-		<hr noshade="noshade"/>
 
 		<p><b>General Goal(s):</b></p>
 		<p>The user will be able to exploit a select field to obtain all users' orders.</p>

@@ -1,7 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE html>
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
-<html xmlns="http://www.w3.org/1999/xhtml">	
+<html>	
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Vulnerable Section</title>
@@ -14,11 +13,10 @@
 		</a>
 	
 		<h1>Vulnerable Section</h1>
-		<hr noshade="noshade"/>
 
 		<!--  Injection Flaws examples -->		
 		<%@include file="SQLInjection/SQLInjection.html" %>		
-		<br />
+
 		<spring:url value="SQLInjection/prepareSQLInjection.html" var="url" />
 		<a href="${url}">
 			<img src="../images/Play.png" class="play" />
@@ -28,7 +26,7 @@
 
 		<!--  Parameter Tampering examples -->
 		<%@include file="parameterTampering/ParameterTampering.html" %>
-		<br />
+
 		<spring:url value="parameterTampering/prepareSelectFieldTampering.html" var="url" />
 		<a href="${url}">
 			<img src="../images/Play.png" class="play" />
@@ -50,7 +48,7 @@
 
 		<!--  Cross Site Scripting (XSS) -->
 		<%@include file="xss/XSS.html" %>
-		<br />
+
 		<spring:url value="xss/prepareXSS.html" var="url" />
 		<a href="${url}">
 			<img src="../images/Play.png" class="play" />

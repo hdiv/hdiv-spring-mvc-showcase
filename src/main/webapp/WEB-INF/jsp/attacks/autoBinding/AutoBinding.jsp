@@ -1,12 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE html>
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
-
-<html xmlns="http://www.w3.org/1999/xhtml">	
+<html>	
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Auto Binding</title>
-		
 		<link rel="stylesheet" type="text/css" href="../../css/example.css" />
 	</head>
 	<body>
@@ -16,7 +13,6 @@
 			<img src="../../images/back-icon.png" class="back" />
 		</a>
 		<h1>How to perform Auto Binding</h1>
-		<hr noshade="noshade"/>
 		
 		<p><b>General Goal(s):</b></p>
 		<p>The user will be able to exploit a field that does not exist in the form but it does in the command. Then, Spring will make an auto binding and fill the commands field, sending it to the controller as it was a form field.</p>		

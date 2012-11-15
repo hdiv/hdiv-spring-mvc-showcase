@@ -1,6 +1,6 @@
-<%@ page contentType="text/html; charset=ISO-8859-1" language="java" errorPage="" %>
-
-<html xmlns="http://www.w3.org/1999/xhtml">	
+<!DOCTYPE html>
+<%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>SQL Injection Example</title>
@@ -14,26 +14,25 @@
 		</a>
 	
 		<h1>User account</h1>
-		<hr noshade="noshade"/>
 			
-		<table align="center" border="1" cellspacing="2">
-			<tr bgcolor="#CCCCCC">
-				<td><b>Account</b></td>
-				<td><b>email</b></td>
-				<td><b>First Name</b></td>
-				<td><b>Last Name</b></td>
-				<td><b>Status</b></td>
-				<td><b>Adress 1</b></td>
-				<td><b>Adress 2</b></td>
-				<td><b>City</b></td>
-				<td><b>State</b></td>
-				<td><b>Zip</b></td>
-				<td><b>Country</b></td>
-				<td><b>Phone</b></td>
+		<table>
+			<tr>
+				<th>Account</th>
+				<th>email</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Status</th>
+				<th>Adress 1</th>
+				<th>Adress 2</th>
+				<th>City</th>
+				<th>State</th>
+				<th>Zip</th>
+				<th>Country</th>
+				<th>Phone</th>
 			</tr>		
 			
 			<c:forEach items="${userAccounts}" var="account">
-				<tr align="center"> 
+				<tr> 
 					<td>${account.userId}</td>			
 					<td>${account.email}</td>			
 					<td>${account.firstName}</td>

@@ -1,6 +1,6 @@
-<%@ page contentType="text/html; charset=ISO-8859-1" language="java" errorPage="" %>
+<!DOCTYPE html>
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
-<html xmlns="http://www.w3.org/1999/xhtml">	
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Auto Binding</title>
@@ -14,26 +14,26 @@
 		</a>
 	
 		<h1>User Orders</h1>
-		<hr noshade="noshade"/>
 			
-		<center><font size="4"><b>My Unpaid Orders</b></font></center>
-		<table align="center" border="1" cellspacing="2">
-			<tr bgcolor="#CCCCCC">
-				<td><b>Order ID</b></td>
-				<td><b>User ID</b></td>
-				<td><b>Order Date</b></td>				
-				<td><b>Ship Address 1</b></td>
-				<td><b>Ship Address 2</b></td>				
-				<td><b>Ship City</b></td>
-				<td><b>Ship State</b></td>
-				<td><b>Ship Zip</b></td>
-				<td><b>Ship Country</b></td>
-				<td><b>Credit Card</b></td>
-				<td><b>Expire Date</b></td>
-				<td><b>Card type</b></td>
+		<h2 class="subtitle">My Unpaid Orders</h2>
+		<table>
+			<tr>
+				<th>Order ID</th>
+				<th>User ID</th>
+				<th>Order Date</th>				
+				<th>Ship Address 1</th>
+				<th>Ship Address 2</th>				
+				<th>Ship City</th>
+				<th>Ship State</th>
+				<th>Ship Zip</th>
+				<th>Ship Country</th>
+				<th>Credit Card</th>
+				<th>Expire Date</th>
+				<th>Card type</th>
+				<th></th>
 			</tr>
 			<c:forEach items="${orderList}" var="order">
-				<tr align="center"> 
+				<tr> 
 					<td>${order.orderId}</td>
 					<td>${order.username}</td>
 					<td>${order.orderDate}</td>					
@@ -46,34 +46,35 @@
 					<td>${order.creditCard}</td>
 					<td>${order.expiryDate}</td>
 					<td>${order.cardType}</td>	
-					<td bordercolor="white" style="border: 0px;">
+					<td>
 						<c:url value="modifyAutoBinding/${order.username}/${order.orderId}.html" var="url" />
 						<a href="${url}">
-							<img src="../../images/modify.png" width="24" height="24" title="Modify" alt="Modify" class="icon" />
+							<img src="../../images/modify.png" title="Modify" alt="Modify" class="icon" />
 						</a>
 					</td>									
 				</tr>
 			</c:forEach>
 		</table>
 		<br/><br/>
-		<center><font size="4"><b>My Paid Orders</b></font></center>
-		<table align="center" border="1" cellspacing="2">
-			<tr bgcolor="#CCCCCC">
-				<td><b>Order ID</b></td>
-				<td><b>User ID</b></td>
-				<td><b>Order Date</b></td>				
-				<td><b>Ship Address 1</b></td>
-				<td><b>Ship Address 2</b></td>				
-				<td><b>Ship City</b></td>
-				<td><b>Ship State</b></td>
-				<td><b>Ship Zip</b></td>
-				<td><b>Ship Country</b></td>
-				<td><b>Credit Card</b></td>
-				<td><b>Expire Date</b></td>
-				<td><b>Card type</b></td>
+		
+		<h2 class="subtitle">My Paid Orders</h2>
+		<table>
+			<tr>
+				<th>Order ID</th>
+				<th>User ID</th>
+				<th>Order Date</th>				
+				<th>Ship Address 1</th>
+				<th>Ship Address 2</th>				
+				<th>Ship City</th>
+				<th>Ship State</th>
+				<th>Ship Zip</th>
+				<th>Ship Country</th>
+				<th>Credit Card</th>
+				<th>Expire Date</th>
+				<th>Card type</th>
 			</tr>
 			<c:forEach items="${paidOrderList}" var="paidOrder">
-				<tr align="center"> 
+				<tr> 
 					<td>${paidOrder.orderId}</td>
 					<td>${paidOrder.username}</td>
 					<td>${paidOrder.orderDate}</td>					
