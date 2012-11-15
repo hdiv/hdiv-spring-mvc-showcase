@@ -21,8 +21,9 @@
 		<p>Then, you have to set the username parameter to the following value when you post 
 		the form: <b>ACID</b></p>
 		<form:form action="processListOrders.html" method="post" commandName="order">
-			<form:hidden path="username"></form:hidden>
-			<br />
+			<p>
+				<form:hidden path="username"></form:hidden>
+			</p>
 			<form:button>View Orders</form:button>
 		</form:form>
 		

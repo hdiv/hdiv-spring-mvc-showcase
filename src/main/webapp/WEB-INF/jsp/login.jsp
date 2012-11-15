@@ -19,23 +19,19 @@
 	<form name='f'
 		action='j_spring_security_check'
 		method='post'>
-		<table>
-			<tr>
-				<td>User:</td>
-				<td><input type='text' name='j_username' value=''/>
-				</td>
-			</tr>
-			<tr>
-				<td>Password:</td>
-				<td><input type='password' name='j_password' />
-				</td>
-			</tr>
-			<tr>
-				<td colspan='2'><input name="submit" type="submit"
-					value="Login" />
-				</td>
-			</tr>
-		</table>
+		<fieldset>
+			<p>
+				<label for="j_username">User:</label>
+				<input type='text' name='j_username' value=''/>
+			</p>
+			<p>
+				<label for="j_password">Password:</label>
+				<input type='password' name='j_password' />
+			</p>
+			<div class="centerText">
+				<input name="submit" type="submit" value="Login" />
+			</div>
+		</fieldset>
 	</form>
 	
 <%@ include file="/WEB-INF/jsp/template/footer.jsp"%>

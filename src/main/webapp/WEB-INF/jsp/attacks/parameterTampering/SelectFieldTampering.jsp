@@ -21,10 +21,12 @@
 		<p>Then, you have to set the username parameter to the following value when you post 
 		the form: <b>ACID</b></p>
 		<form:form action="processListOrders.html" method="post" commandName="order">
-			<form:select path="username">
-				<form:option value="j2ee" label="j2ee" />
-			</form:select>
-			<br />
+			<p>
+				<label for="username">Select Username:</label>
+				<form:select path="username">
+					<form:option value="j2ee" label="j2ee" />
+				</form:select>
+			</p>
 			<form:button>View Orders</form:button>
 		</form:form>
 		

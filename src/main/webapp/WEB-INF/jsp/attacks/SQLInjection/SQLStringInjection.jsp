@@ -21,11 +21,11 @@
 		<p>Then, inserting the value <b>ACID' or '1'='1</b>, you will be able to see all the accounts.</p>
 		<form:form action="processSQLStringInjection.html" commandName="account" method="post">
 			<form:errors path="*" cssClass="error"/>
-			<br/>
-			<label for="userId">Enter your last name:
+			<p>
+				<label for="userId">Enter your last name:</label>
 				<form:input path="userId" />
-			</label>
-			<form:button>GO!</form:button>
+				<form:button>GO!</form:button>
+			</p>
 		</form:form>
 		
 		<%@ include file="/WEB-INF/jsp/template/footer.jsp"%>
