@@ -141,14 +141,23 @@ div.centerText {
 
 form fieldset {
 	border: 1px solid #c3c3c3;
-	width: 400px;
+	width: 550px;
 	margin: auto;
 }
 
 form label {
-	width: 14em;
+	width: 16em;
 	float: left;
 	text-align: right;
 	margin-right: 0.5em;
 	display: block
+}
+
+div.success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	padding: 15px 10px 15px 50px;
+	border: 1px solid;
+	margin: 10px 0px;
+	padding: 15px 10px 15px 50px;
 }
