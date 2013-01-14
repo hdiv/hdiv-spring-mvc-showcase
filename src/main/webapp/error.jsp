@@ -1,7 +1,7 @@
 <!DOCTYPE html>
+<%@page import="org.hdiv.util.Constants"%>
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.Map"%>
-<%@page import="org.hdiv.util.HDIVErrorCodes"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -67,7 +67,7 @@ body {
 			<p>
 			<ul>
 <%
-	Map errors = (Map)request.getSession().getAttribute(HDIVErrorCodes.EDITABLE_PARAMETER_ERROR);
+	Map errors = (Map)request.getSession().getAttribute(Constants.EDITABLE_PARAMETER_ERROR);
 	if(errors != null){
 		Iterator itr = errors.keySet().iterator(); 
 		while(itr.hasNext()) {
@@ -84,7 +84,7 @@ body {
 				</li>
 				<%
 	    }
-		request.getSession().removeAttribute(HDIVErrorCodes.EDITABLE_PARAMETER_ERROR);
+		request.getSession().removeAttribute(Constants.EDITABLE_PARAMETER_ERROR);
 	}
 %>
 			</ul>
