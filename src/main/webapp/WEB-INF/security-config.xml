@@ -10,7 +10,7 @@
 		<security:form-login login-page="/login.html" />
 		<security:logout logout-url="/logout.html"
 			logout-success-url="/" />
-		<security:custom-filter before="FIRST" ref="hdivFilter" />
+		<security:custom-filter after="SECURITY_CONTEXT_FILTER" ref="hdivFilter" />
 		<security:intercept-url access="ROLE_USER"
 			pattern="/authenticated/**" />
 	</security:http>
