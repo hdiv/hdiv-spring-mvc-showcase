@@ -27,6 +27,10 @@
 		<filter-name>ValidatorFilter</filter-name>
 		<servlet-name>SampleMvc</servlet-name>
 	</filter-mapping>
+	<filter-mapping>
+		<filter-name>ValidatorFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
 	-->
 	<!-- String security -->
 	<filter>
@@ -35,7 +39,11 @@
 	</filter>
 	<filter-mapping>
 		<filter-name>springSecurityFilterChain</filter-name>
-		<url-pattern>/*</url-pattern>
+		<url-pattern>*.html</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>*.jsp</url-pattern>
 	</filter-mapping>
 	<!-- Spring MVC Servlet -->
 	<servlet>
