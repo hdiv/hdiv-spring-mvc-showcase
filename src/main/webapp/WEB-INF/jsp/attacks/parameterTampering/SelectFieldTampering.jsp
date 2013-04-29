@@ -20,7 +20,7 @@
 		of the <b>j2ee</b> user.</p>
 		<p>Then, you have to set the username parameter to the following value when you post 
 		the form: <b>ACID</b></p>
-		<form:form action="processListOrders.html" method="post" commandName="order">
+		<form:form action="processListOrdersSelect.html" method="post" commandName="order">
 			<p>
 				<label for="username">Select Username:</label>
 				<form:select path="username">

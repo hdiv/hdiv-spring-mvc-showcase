@@ -19,7 +19,7 @@
 		<p>First, by clicking in the link you will visualize all the orders 
 		of the <b>j2ee</b> user.</p>
 		<p>Then, you have to set the username link parameter value to to <b>ACID</b> to view his orders.</p>
-		<c:url value="processListOrders.html" var="url">
+		<c:url value="processListOrdersLink.html" var="url">
 			<c:param name="username" value="j2ee" />
 		</c:url>
 		<a href="${url}">

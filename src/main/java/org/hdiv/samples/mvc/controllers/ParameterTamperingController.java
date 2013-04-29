@@ -10,15 +10,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * Class that controls the workflow of the Parameter Tampering vulnerability
- * example.
+ * Class that controls the workflow of the Parameter Tampering vulnerability example.
  * 
- * Parameter tampering is a simple attack targeting the application business
- * logic. This attack takes advantage of the fact that many programmers rely on
- * hidden or fixed fields (such as a hidden tag in a form or a parameter in a
- * URL) as the only security measure for certain operations. Attackers can
- * easily modify these parameters to bypass the security mechanisms that rely on
- * them.
+ * Parameter tampering is a simple attack targeting the application business logic. This attack takes advantage of the
+ * fact that many programmers rely on hidden or fixed fields (such as a hidden tag in a form or a parameter in a URL) as
+ * the only security measure for certain operations. Attackers can easily modify these parameters to bypass the security
+ * mechanisms that rely on them.
  * 
  */
 @Controller
@@ -48,21 +45,34 @@ public class ParameterTamperingController {
 	@RequestMapping(value = { "/attacks/parameterTampering/prepareLinkTampering",
 			"/secure/parameterTampering/prepareLinkTampering" })
 	public String prepareLinkTampering(Model model) {
+
 		return "/attacks/parameterTampering/LinkParamTampering";
 	}
 
-	/**
-	 * Get all the orders by the username and sends it to the view.
-	 * 
-	 * @param order
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value = { "/attacks/parameterTampering/processListOrders",
-			"/secure/parameterTampering/processListOrders" })
-	public String processListOrders(Order order, Model model) {
+	@RequestMapping(value = { "/attacks/parameterTampering/processListOrdersSelect",
+			"/secure/parameterTampering/processListOrdersSelect" })
+	public String processListOrdersSelect(Order order, Model model) {
 		List<Order> localList = attacksExampleFacade.getOrdersByUsername(order.getUsername());
 		model.addAttribute("orderList", localList);
+		model.addAttribute("back", "prepareSelectFieldTampering");
+		return "/attacks/parameterTampering/ListOrders";
+	}
+
+	@RequestMapping(value = { "/attacks/parameterTampering/processListOrdersHidden",
+			"/secure/parameterTampering/processListOrdersHidden" })
+	public String processListOrdersHidden(Order order, Model model) {
+		List<Order> localList = attacksExampleFacade.getOrdersByUsername(order.getUsername());
+		model.addAttribute("orderList", localList);
+		model.addAttribute("back", "prepareHiddenFieldTampering");
+		return "/attacks/parameterTampering/ListOrders";
+	}
+
+	@RequestMapping(value = { "/attacks/parameterTampering/processListOrdersLink",
+			"/secure/parameterTampering/processListOrdersLink" })
+	public String processListOrdersLink(Order order, Model model) {
+		List<Order> localList = attacksExampleFacade.getOrdersByUsername(order.getUsername());
+		model.addAttribute("orderList", localList);
+		model.addAttribute("back", "prepareLinkTampering");
 		return "/attacks/parameterTampering/ListOrders";
 	}
 

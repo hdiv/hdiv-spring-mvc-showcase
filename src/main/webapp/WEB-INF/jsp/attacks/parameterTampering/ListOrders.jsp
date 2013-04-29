@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../../css/example.css" />
 	</head>
 	<body>
-		<c:url value="prepareHiddenFieldTampering.html" var="url" />
+		<c:url value="${back}.html" var="url" />
 		<a href="${url}">
 			<img src="../../images/back-icon.png" alt="Return to hidden field tampering page" class="back" />
 		</a>

@@ -11,8 +11,13 @@
 		<a href="${url}">			
 			<img src="../images/back-icon.png"  alt="Return to examples page" class="back" />
 		</a>
-	
-		<h1>Vulnerable Section</h1>
+		
+		<c:if test="${fn:contains(requestScope['javax.servlet.forward.request_uri'],'/attacks/')}">
+			<h1>Vulnerable Section</h1>
+		</c:if>
+		<c:if test="${fn:contains(requestScope['javax.servlet.forward.request_uri'],'/secure/')}">
+			<h1>Secured Section</h1>
+		</c:if>
 
 		<!--  Injection Flaws examples -->		
 		<%@include file="SQLInjection/SQLInjection.html" %>		
