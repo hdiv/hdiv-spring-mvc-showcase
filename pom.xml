@@ -8,8 +8,8 @@
 	<name>HDIV-Spring-Mvc-Showcase</name>
 
 	<properties>
-		<org.springframework-version>3.1.0.RELEASE</org.springframework-version>
-		<org.springsecurity-version>3.1.0.RELEASE</org.springsecurity-version>
+		<org.springframework-version>4.0.5.RELEASE</org.springframework-version>
+		<org.springsecurity-version>3.2.4.RELEASE</org.springsecurity-version>
 		<org.slf4j-version>1.6.1</org.slf4j-version>
 		<org.hdiv-version>2.1.6</org.hdiv-version>
 	</properties>
