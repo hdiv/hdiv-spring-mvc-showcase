@@ -17,13 +17,13 @@
 	
 		<h1>Modify Order</h1>
 			
-		<h2 class="subtitle">${order.username}'s  ${order.orderId}  Order</h2>
+		<h2 class="subtitle"><c:out value="${order.username}"/>'s  <c:out value="${order.orderId}"/>  Order</h2>
 
 		<form:form action="../../updateAutoBinding.html" commandName="order">
 			<fieldset>
 				<p>
 					<label>Order Date:</label>
-					${order.orderDate}
+					<c:out value="${order.orderDate}"/>
 				</p>
 				<p>
 					<label for="shipAddress1">Ship Address 1:</label>

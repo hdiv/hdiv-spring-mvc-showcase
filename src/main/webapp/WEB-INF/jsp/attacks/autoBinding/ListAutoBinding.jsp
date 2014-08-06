@@ -34,18 +34,18 @@
 			</tr>
 			<c:forEach items="${orderList}" var="order">
 				<tr> 
-					<td>${order.orderId}</td>
-					<td>${order.username}</td>
-					<td>${order.orderDate}</td>					
-					<td>${order.shipAddress1}</td>
-					<td>${order.shipAddress2}</td>
-					<td>${order.shipCity}</td>
-					<td>${order.shipState}</td>
-					<td>${order.shipZip}</td>
-					<td>${order.shipCountry}</td>					
-					<td>${order.creditCard}</td>
-					<td>${order.expiryDate}</td>
-					<td>${order.cardType}</td>	
+					<td><c:out value="${order.orderId}"/></td>
+					<td><c:out value="${order.username}"/></td>
+					<td><c:out value="${order.orderDate}"/></td>					
+					<td><c:out value="${order.shipAddress1}"/></td>
+					<td><c:out value="${order.shipAddress2}"/></td>
+					<td><c:out value="${order.shipCity}"/></td>
+					<td><c:out value="${order.shipState}"/></td>
+					<td><c:out value="${order.shipZip}"/></td>
+					<td><c:out value="${order.shipCountry}"/></td>					
+					<td><c:out value="${order.creditCard}"/></td>
+					<td><c:out value="${order.expiryDate}"/></td>
+					<td><c:out value="${order.cardType}"/></td>	
 					<td>
 						<c:url value="modifyAutoBinding/${order.username}/${order.orderId}.html" var="url" />
 						<a href="${url}">
@@ -75,18 +75,18 @@
 			</tr>
 			<c:forEach items="${paidOrderList}" var="paidOrder">
 				<tr> 
-					<td>${paidOrder.orderId}</td>
-					<td>${paidOrder.username}</td>
-					<td>${paidOrder.orderDate}</td>					
-					<td>${paidOrder.shipAddress1}</td>
-					<td>${paidOrder.shipAddress2}</td>
-					<td>${paidOrder.shipCity}</td>
-					<td>${paidOrder.shipState}</td>
-					<td>${paidOrder.shipZip}</td>
-					<td>${paidOrder.shipCountry}</td>					
-					<td>${paidOrder.creditCard}</td>
-					<td>${paidOrder.expiryDate}</td>
-					<td>${paidOrder.cardType}</td>															
+					<td><c:out value="${paidOrder.orderId}"/></td>
+					<td><c:out value="${paidOrder.username}"/></td>
+					<td><c:out value="${paidOrder.orderDate}"/></td>					
+					<td><c:out value="${paidOrder.shipAddress1}"/></td>
+					<td><c:out value="${paidOrder.shipAddress2}"/></td>
+					<td><c:out value="${paidOrder.shipCity}"/></td>
+					<td><c:out value="${paidOrder.shipState}"/></td>
+					<td><c:out value="${paidOrder.shipZip}"/></td>
+					<td><c:out value="${paidOrder.shipCountry}"/></td>					
+					<td><c:out value="${paidOrder.creditCard}"/></td>
+					<td><c:out value="${paidOrder.expiryDate}"/></td>
+					<td><c:out value="${paidOrder.cardType}"/></td>															
 				</tr>
 			</c:forEach>
 		</table>

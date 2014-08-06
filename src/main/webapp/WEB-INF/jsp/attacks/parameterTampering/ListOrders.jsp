@@ -32,18 +32,18 @@
 			</tr>
 			<c:forEach items="${orderList}" var="order">
 				<tr> 
-					<td>${order.orderId}</td>
-					<td>${order.username}</td>
-					<td>${order.orderDate}</td>					
-					<td>${order.shipAddress1}</td>
-					<td>${order.shipAddress2}</td>
-					<td>${order.shipCity}</td>
-					<td>${order.shipState}</td>
-					<td>${order.shipZip}</td>
-					<td>${order.shipCountry}</td>					
-					<td>${order.creditCard}</td>
-					<td>${order.expiryDate}</td>
-					<td>${order.cardType}</td>										
+					<td><c:out value="${order.orderId}"/></td>
+					<td><c:out value="${order.username}"/></td>
+					<td><c:out value="${order.orderDate}"/></td>					
+					<td><c:out value="${order.shipAddress1}"/></td>
+					<td><c:out value="${order.shipAddress2}"/></td>
+					<td><c:out value="${order.shipCity}"/></td>
+					<td><c:out value="${order.shipState}"/></td>
+					<td><c:out value="${order.shipZip}"/></td>
+					<td><c:out value="${order.shipCountry}"/></td>					
+					<td><c:out value="${order.creditCard}"/></td>
+					<td><c:out value="${order.expiryDate}"/></td>
+					<td><c:out value="${order.cardType}"/></td>										
 				</tr>
 			</c:forEach>
 		</table>

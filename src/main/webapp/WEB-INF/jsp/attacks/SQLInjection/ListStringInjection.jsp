@@ -32,19 +32,19 @@
 			</tr>		
 			
 			<c:forEach items="${userAccounts}" var="account">
-				<tr> 
-					<td>${account.userId}</td>			
-					<td>${account.email}</td>			
-					<td>${account.firstName}</td>
-					<td>${account.lastName}</td>					
-					<td>${account.status}</td>
-					<td>${account.address1}</td>
-					<td>${account.address2}</td>
-					<td>${account.city}</td>
-					<td>${account.state}</td>
-					<td>${account.zip}</td>
-					<td>${account.country}</td>
-					<td>${account.phone}</td>										
+				<tr>
+					<td><c:out value="${account.userId}"/></td>			
+					<td><c:out value="${account.email}"/></td>			
+					<td><c:out value="${account.firstName}"/></td>
+					<td><c:out value="${account.lastName}"/></td>					
+					<td><c:out value="${account.status}"/></td>
+					<td><c:out value="${account.address1}"/></td>
+					<td><c:out value="${account.address2}"/></td>
+					<td><c:out value="${account.city}"/></td>
+					<td><c:out value="${account.state}"/></td>
+					<td><c:out value="${account.zip}"/></td>
+					<td><c:out value="${account.country}"/></td>
+					<td><c:out value="${account.phone}"/></td>										
 				</tr>
 			</c:forEach>
 		</table>
