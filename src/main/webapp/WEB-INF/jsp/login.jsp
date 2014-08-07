@@ -20,9 +20,14 @@
 		action='j_spring_security_check'
 		method='post'>
 		<fieldset>
+			<c:if test="${param.error != null}">        
+		        <p>
+		            Invalid username and password.
+		        </p>
+		    </c:if>
 			<p>
 				<label for="j_username">User:</label>
-				<input type='text' name='j_username' value=''/>
+				<input type='text' name='j_username' value='' autofocus="autofocus"/>
 			</p>
 			<p>
 				<label for="j_password">Password:</label>
