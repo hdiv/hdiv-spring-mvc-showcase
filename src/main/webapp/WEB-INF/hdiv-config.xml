@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.hdiv.org/schema/hdiv http://www.hdiv.org/schema/hdiv/hdiv.xsd">
 
-	<hdiv:config errorPage="/error.jsp" excludedExtensions="css,png">
+	<hdiv:config excludedExtensions="css,png">
 		<hdiv:sessionExpired loginPage="/login.html" homePage="/"/>
 		<hdiv:startPages>/attacks/.*</hdiv:startPages>
 		<hdiv:startPages method="get">/,/login.html,/logout.html</hdiv:startPages>
