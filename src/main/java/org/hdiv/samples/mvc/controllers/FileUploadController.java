@@ -38,7 +38,9 @@ public class FileUploadController {
 	@RequestMapping(value = "binding", method = RequestMethod.GET)
 	public String prepareBinding(Model model) {
 
-		model.addAttribute("bean", new MultipartBean());
+		MultipartBean bean = new MultipartBean();
+		bean.setHiddenValue(10);
+		model.addAttribute("bean", bean);
 
 		return "/fileupload/binding";
 	}
@@ -47,7 +49,8 @@ public class FileUploadController {
 	public String processBinding(MultipartBean bean, Model model) {
 
 		model.addAttribute("message", "File '" + bean.getFile().getOriginalFilename()
-				+ "' uploaded successfully. Name '" + bean.getName() + "'. Search '" + bean.getSearch() + "'");
+				+ "' uploaded successfully. Name '" + bean.getName() + "'. Search '" + bean.getSearch()
+				+ "'. HiddenValue '" + bean.getHiddenValue() + "'.");
 		return "/fileupload/binding";
 	}
 

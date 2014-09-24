@@ -10,6 +10,8 @@ public class MultipartBean {
 
 	private String search;
 
+	private int hiddenValue;
+
 	public MultipartFile getFile() {
 		return file;
 	}
@@ -32,6 +34,14 @@ public class MultipartBean {
 
 	public void setSearch(String search) {
 		this.search = search;
+	}
+
+	public int getHiddenValue() {
+		return hiddenValue;
+	}
+
+	public void setHiddenValue(int hiddenValue) {
+		this.hiddenValue = hiddenValue;
 	}
 
 }

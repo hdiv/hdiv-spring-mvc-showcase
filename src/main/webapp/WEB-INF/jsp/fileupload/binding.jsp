@@ -30,6 +30,7 @@
 					<label for="search">Search:</label>
 					<form:input path="search"/>
 				</p>
+				<form:hidden path="hiddenValue"/>
 				<p>
 					<label for="file">Select a file:</label>
 					<input id="file" type="file" name="file" />
