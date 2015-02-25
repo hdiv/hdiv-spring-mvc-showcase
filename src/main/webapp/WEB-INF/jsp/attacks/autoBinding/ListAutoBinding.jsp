@@ -47,7 +47,10 @@
 					<td><c:out value="${order.expiryDate}"/></td>
 					<td><c:out value="${order.cardType}"/></td>	
 					<td>
-						<c:url value="modifyAutoBinding/${order.username}/${order.orderId}.html" var="url" />
+						<c:url value="modifyAutoBinding.html" var="url">
+							<c:param name="userId" value="${order.username}"/>
+							<c:param name="orderId" value="${order.orderId}"/>
+						</c:url>
 						<a href="${url}">
 							<img src="../../images/modify.png" title="Modify" alt="Modify" class="icon" />
 						</a>

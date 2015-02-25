@@ -4,23 +4,25 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Auto Binding</title>
-		<link rel="stylesheet" type="text/css" href="../../../../css/example.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/example.css" />
 	</head>
 	<body>
 		
-		<c:url value="../../processAutoBinding.html" var="url">
+		<c:url value="processAutoBinding.html" var="url">
 			<c:param name="username" value="j2ee"/>
 		</c:url>
 		<a href="${url}">
-			<img src="../../../../images/back-icon.png" alt="Return to Auto Binding page" class="back" />
+			<img src="../../images/back-icon.png" alt="Return to Auto Binding page" class="back" />
 		</a>
 	
 		<h1>Modify Order</h1>
 			
 		<h2 class="subtitle"><c:out value="${order.username}"/>'s  <c:out value="${order.orderId}"/>  Order</h2>
 
-		<form:form action="../../updateAutoBinding.html" commandName="order">
+		<form:form action="updateAutoBinding.html" commandName="order">
+		
 			<fieldset>
+				<form:errors path="*" cssClass="error"/>
 				<p>
 					<label>Order Date:</label>
 					<c:out value="${order.orderDate}"/>
