@@ -2,15 +2,15 @@ package org.hdiv.samples.mvc.controllers;
 
 import java.util.List;
 
-import javax.validation.Valid;
-
 import org.hdiv.samples.mvc.bean.Account;
+import org.hdiv.samples.mvc.bean.SampleGroup;
 import org.hdiv.samples.mvc.logic.AttacksExampleFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -44,7 +44,7 @@ public class SQLStringInjectionController {
 	 */
 	@RequestMapping(value = { "/attacks/SQLInjection/processSQLStringInjection",
 			"/secure/SQLInjection/processSQLStringInjection" }, method = RequestMethod.POST)
-	public String processSQLStringInjection(@Valid Account account, Errors errors, Model model) {
+	public String processSQLStringInjection(@Validated(SampleGroup.class) Account account, Errors errors, Model model) {
 
 		if (errors.hasErrors()) {
 			return "/attacks/SQLInjection/SQLStringInjection";

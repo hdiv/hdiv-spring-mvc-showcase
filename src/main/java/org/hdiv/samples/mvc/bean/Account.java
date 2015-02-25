@@ -2,8 +2,11 @@ package org.hdiv.samples.mvc.bean;
 
 import java.io.Serializable;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class Account implements Serializable {
 
+	@NotEmpty(groups = SampleGroup.class) 
 	private String userId;
 	private String email;
 	private String firstName;
