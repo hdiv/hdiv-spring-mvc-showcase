@@ -8,9 +8,9 @@
 	<name>HDIV-Spring-Mvc-Showcase</name>
 
 	<properties>
-		<org.springframework-version>4.0.5.RELEASE</org.springframework-version>
-		<org.springsecurity-version>3.2.4.RELEASE</org.springsecurity-version>
-		<org.slf4j-version>1.6.1</org.slf4j-version>
+		<org.springframework-version>4.1.6.RELEASE</org.springframework-version>
+		<org.springsecurity-version>3.2.7.RELEASE</org.springsecurity-version>
+		<org.slf4j-version>1.7.12</org.slf4j-version>
 		<org.hdiv-version>2.1.9</org.hdiv-version>
 	</properties>
 
@@ -59,29 +59,29 @@
 			<version>1.2</version>
 		</dependency>
 
-		<!-- Servlet API 2.5 -->
+		<!-- Servlet API -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
-			<artifactId>jsp-api</artifactId>
-			<version>2.2</version>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>2.3.1</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- JSR 303 with Hibernate Validator -->
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
-			<version>1.0.0.GA</version>
+			<version>1.1.0.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>4.1.0.Final</version>
+			<version>5.1.3.Final</version>
 		</dependency>
 		<!-- HSQLDB -->
 		<dependency>
@@ -92,18 +92,18 @@
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
-			<version>1.2.2</version>
+			<version>1.4</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-pool</groupId>
 			<artifactId>commons-pool</artifactId>
-			<version>1.5.3</version>
+			<version>1.6</version>
 		</dependency>
 		<!-- Logging -->
 		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
-			<version>1.1.1</version>
+			<version>1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -119,7 +119,7 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.16</version>
+			<version>1.2.17</version>
 			<scope>runtime</scope>
 		</dependency>
 		<!-- HDIV -->
