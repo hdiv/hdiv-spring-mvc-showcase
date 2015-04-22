@@ -25,9 +25,9 @@
 				<label for="username">Select Username:</label>
 				<form:select path="username">
 					<c:forEach items="${names}" var="name">
-	                    <c:set var="nameLabel" value="Name: ${name}"/>
-	                    <form:option value="${name}" label="${nameLabel}"/>
-	                </c:forEach>
+						<c:set var="nameLabel" value="Name: ${name}"/>
+						<form:option value="${name}" label="${nameLabel}"/>
+					</c:forEach>
 				</form:select>
 			</p>
 			<form:button>View Orders</form:button>
