@@ -24,7 +24,10 @@
 			<p>
 				<label for="username">Select Username:</label>
 				<form:select path="username">
-					<form:option value="j2ee" label="j2ee" />
+					<c:forEach items="${names}" var="name">
+	                    <c:set var="nameLabel" value="Name: ${name}"/>
+	                    <form:option value="${name}" label="${nameLabel}"/>
+	                </c:forEach>
 				</form:select>
 			</p>
 			<form:button>View Orders</form:button>

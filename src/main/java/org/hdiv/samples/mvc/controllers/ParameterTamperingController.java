@@ -1,5 +1,6 @@
 package org.hdiv.samples.mvc.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hdiv.samples.mvc.bean.Order;
@@ -30,6 +31,12 @@ public class ParameterTamperingController {
 		Order order = new Order();
 		order.setUsername("j2ee");
 		model.addAttribute("order", order);
+		
+		List<String> names = new ArrayList<String>();
+		names.add("j2ee");
+		names.add("ACID");
+		model.addAttribute("names", names);
+		
 		return "/attacks/parameterTampering/SelectFieldTampering";
 	}
 
