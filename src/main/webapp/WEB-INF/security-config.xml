@@ -7,12 +7,12 @@
 			http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
 	<security:http auto-config="true">
-		<security:form-login login-page="/login.html" authentication-failure-url="/login.html?error=true" />
+		<security:form-login login-page="/login.html" login-processing-url="/login.html" authentication-failure-url="/login.html?error=true" />
 		<security:logout logout-url="/logout.html" logout-success-url="/" />
 		
 		<security:custom-filter after="SECURITY_CONTEXT_FILTER" ref="hdivFilter" />
 		
-		<security:intercept-url access="ROLE_USER" pattern="/authenticated/**" />
+		<security:intercept-url access="hasRole('ROLE_USER')" pattern="/authenticated/**" />
 	</security:http>
 
 	<bean id="hdivFilter" class="org.hdiv.filter.ValidatorFilter" />

@@ -2,14 +2,13 @@
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
 <html>	
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>SQL Injection Example</title>
-		<link rel="stylesheet" type="text/css" href="../../css/example.css" />
+		<%@ include file="/WEB-INF/jsp/template/head.jsp"%>
 	</head>
 	<body>
 		<c:url value="${back}.html" var="url" />
 		<a href="${url}">
-			<img src="../../images/back-icon.png" alt="Return to hidden field tampering page" class="back" />
+			<img src="${pageContext.request.contextPath}/resources/images/back-icon.png" alt="Return to hidden field tampering page" class="back" />
 		</a>
 		
 		<h1>How to Exploit Hidden Fields</h1>

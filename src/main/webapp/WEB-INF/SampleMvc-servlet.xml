@@ -15,6 +15,8 @@
     <!-- 'hdivEditableValidator' is the predefined bean for Editable Validation -->
     <mvc:annotation-driven validator="hdivEditableValidator"/>
     
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+    
     <mvc:view-controller path="/welcome.html" view-name="welcome"/>
     <mvc:view-controller path="/attacks/attacks.html" view-name="/attacks/attacks"/>
     <mvc:view-controller path="/secure/attacks.html" view-name="/attacks/attacks"/>

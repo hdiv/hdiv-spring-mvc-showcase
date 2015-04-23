@@ -55,7 +55,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SampleMvc</servlet-name>
-		<url-pattern>*.html</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
 	<welcome-file-list>

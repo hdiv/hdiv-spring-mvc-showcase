@@ -2,14 +2,13 @@
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Simple form using ActionForm</title>
-	<link rel="stylesheet" type="text/css" href="../../css/example.css" />
+	<%@ include file="/WEB-INF/jsp/template/head.jsp"%>
 </head>
 <body>
 	<c:url value="../attacks.html" var="url" />
 	<a href="${url}">
-		<img src="../../images/back-icon.png" alt="Return to examples page" class="back" />
+		<img src="${pageContext.request.contextPath}/resources/images/back-icon.png" alt="Return to examples page" class="back" />
 	</a>
 	<h1>Simple form using ActionForm</h1>
 	

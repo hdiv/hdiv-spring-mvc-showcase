@@ -3,8 +3,8 @@
 <html>
 
 <head>
-<title>HDIV-Spring-Mvc-Showcase</title>
-<link rel="stylesheet" type="text/css" href="./css/example.css" />
+	<title>HDIV-Spring-Mvc-Showcase</title>
+	<%@ include file="/WEB-INF/jsp/template/head.jsp"%>
 </head>
 
 <body>

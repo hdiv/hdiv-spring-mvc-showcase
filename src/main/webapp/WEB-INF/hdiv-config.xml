@@ -9,6 +9,7 @@ http://www.hdiv.org/schema/hdiv http://www.hdiv.org/schema/hdiv/hdiv.xsd">
 		<hdiv:startPages>/attacks/.*</hdiv:startPages>
 		<hdiv:startPages method="get">/,/login.html,/logout.html</hdiv:startPages>
 		<hdiv:startPages method="post">/j_spring_security_check</hdiv:startPages>
+		<hdiv:startParameters>_csrf</hdiv:startParameters>
 	</hdiv:config>
 
 	<!-- Accepted pattern within the application for all editable parameters (generated from textbox and textarea) -->

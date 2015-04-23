@@ -2,14 +2,13 @@
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
 <html>	
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>File Upload</title>
-		<link rel="stylesheet" type="text/css" href="../css/example.css" />
+		<%@ include file="/WEB-INF/jsp/template/head.jsp"%>
 	</head>
 	<body>
 		<c:url value="/welcome.html" var="url" />
 		<a href="${url}">			
-			<img src="../images/back-icon.png"  alt="Return to examples page" class="back" />
+			<img src="${pageContext.request.contextPath}/resources/images/back-icon.png"  alt="Return to examples page" class="back" />
 		</a>
 	
 		<h1>File Upload Examples</h1>
@@ -20,7 +19,7 @@
 
 		<spring:url value="simple.html" var="url" />
 		<a href="${url}">
-			<img src="../images/Play.png" class="play" />
+			<img src="${pageContext.request.contextPath}/resources/images/Play.png" class="play" />
 			Simple FileUpload Example
 		</a>
 		<br />
@@ -31,7 +30,7 @@
 
 		<spring:url value="binding.html" var="url" />
 		<a href="${url}">
-			<img src="../images/Play.png" class="play" />
+			<img src="${pageContext.request.contextPath}/resources/images/Play.png" class="play" />
 			Form binding Example
 		</a>
 		

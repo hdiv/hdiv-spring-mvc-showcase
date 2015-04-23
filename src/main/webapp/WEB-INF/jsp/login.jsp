@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
 <html>
 <head>
-<title>Login</title>
-<link rel="stylesheet" type="text/css" href="./css/example.css" />
+	<title>Login</title>
+	<%@ include file="/WEB-INF/jsp/template/head.jsp"%>
 </head>
 
 <body onload='document.f.j_username.focus();'>
@@ -16,9 +16,7 @@
 		<li>tim:tim</li>
 	</ul>
 	
-	<form name='f'
-		action='j_spring_security_check'
-		method='post'>
+	<form name='f' action='' method='post'>
 		<fieldset>
 			<c:if test="${param.error != null}">        
 		        <p>
@@ -26,13 +24,14 @@
 		        </p>
 		    </c:if>
 			<p>
-				<label for="j_username">User:</label>
-				<input type='text' name='j_username' value='' autofocus="autofocus"/>
+				<label for="username">User:</label>
+				<input type='text' name='username' value='' autofocus="autofocus"/>
 			</p>
 			<p>
-				<label for="j_password">Password:</label>
-				<input type='password' name='j_password' />
+				<label for="password">Password:</label>
+				<input type='password' name='password' />
 			</p>
+			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 			<div class="centerText">
 				<input name="submit" type="submit" value="Login" />
 			</div>
