@@ -11,7 +11,7 @@
 		<org.springframework-version>4.1.6.RELEASE</org.springframework-version>
 		<org.springsecurity-version>4.0.1.RELEASE</org.springsecurity-version>
 		<org.slf4j-version>1.7.12</org.slf4j-version>
-		<org.hdiv-version>2.1.10</org.hdiv-version>
+		<org.hdiv-version>2.1.12</org.hdiv-version>
 	</properties>
 
 	<build>

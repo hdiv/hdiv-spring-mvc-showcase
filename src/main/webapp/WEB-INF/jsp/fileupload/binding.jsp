@@ -16,7 +16,7 @@
 		<form:form action="binding.html" method="POST" enctype="multipart/form-data" commandName="bean">
 			<fieldset>
 				<c:if test="${not empty message}">
-					<div id="message" class="success">${message}</div>	  		
+					<div id="message" class="success"><c:out value="${message}"/></div>	  		
 			  	</c:if>
 			  	<p>
 					<label for="name">Name:</label>
