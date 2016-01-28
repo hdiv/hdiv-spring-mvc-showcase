@@ -23,8 +23,10 @@
 		%>
 		
 		<p>
-		<c:url value="/logout.html" var="url" />
-		<a href="${url}">Logout</a>
+		<form action="${pageContext.request.contextPath}/logout.html" method="post">
+			<input type="submit" value="Logout">
+			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+		</form>
 		</p>
 		
 		<%@ include file="/WEB-INF/jsp/template/footer.jsp"%>
