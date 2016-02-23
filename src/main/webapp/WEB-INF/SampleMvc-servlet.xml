@@ -45,7 +45,6 @@
 	</bean>
 	
 	<!--
-
 		- This bean configures the 'prefix' and 'suffix' properties of
 		- InternalResourceViewResolver, which resolves logical view names
 		- returned by Controllers. For example, a logical view name of "vets"
@@ -56,7 +55,6 @@
 
 	<!-- Multipart config with Hdiv support -->
 	<bean id="multipartResolver" class="org.hdiv.web.multipart.HdivCommonsMultipartResolver">
-		<property name="maxUploadSize" value="100000" />
 	</bean>
 	
 </beans>
