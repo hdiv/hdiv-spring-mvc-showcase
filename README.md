@@ -1,5 +1,5 @@
-Http Data Integrity Validator
-=============================
+Hdiv: Application Self-Protection
+=================================
 Sample application showing the integration between Spring Mvc and Hdiv.
 
 How to build the application
