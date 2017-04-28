@@ -3,12 +3,12 @@
 <html>
 
 <head>
-	<title>HDIV-Spring-Mvc-Showcase</title>
+	<title>Hdiv-Spring-Mvc-Showcase</title>
 	<%@ include file="/WEB-INF/jsp/template/head.jsp"%>
 </head>
 
 <body>
-	<h1>HDIV Spring Mvc Showcase</h1>
+	<h1>Hdiv Spring Mvc Showcase</h1>
 
 	<p>These modules follow the "learn by example" school. Be sure to
 		"look under the hood" to see how it's done.</p>
