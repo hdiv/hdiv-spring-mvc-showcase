@@ -24,10 +24,10 @@
 
 	<h2>
 		<c:url value="/secure/attacks.html" var="url" />
-		<a href="${url}">Vulnerable Example Section resolved by HDIV </a>
+		<a href="${url}">Vulnerable Example Section resolved by Hdiv </a>
 	</h2>
 	<p>This section is a demonstration of common web application flaws
-		but they are resolved by HDIV.</p>
+		but they are resolved by Hdiv.</p>
 
 	<h2>
 		<c:url value="/authenticated/info.html" var="url" />
