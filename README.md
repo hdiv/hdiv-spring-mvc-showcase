@@ -9,6 +9,6 @@ Clone this repo and build war file (you'll need Git and Maven installed):
     git clone git://github.com/hdiv/hdiv-spring-mvc-showcase.git
     cd hdiv-spring-mvc-showcase
     mvn package
-    mvn tomcat:run
+    mvn tomcat7:run
 
 Open [http://localhost:8080/hdiv-spring-mvc-showcase](http://localhost:8080/hdiv-spring-mvc-showcase) in your favorite browser.
