@@ -19,7 +19,7 @@
 		of the <b>j2ee</b> user.</p>
 		<p>Then, you have to set the username parameter to the following value when you post 
 		the form: <b>ACID</b></p>
-		<form:form action="processListOrdersHidden.html" method="post" commandName="order">
+		<form:form action="processListOrdersHidden.html" method="post" modelAttribute="order">
 			<p>
 				<form:hidden path="username"></form:hidden>
 			</p>

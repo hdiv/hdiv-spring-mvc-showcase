@@ -14,7 +14,7 @@
 	
 	<p>Enter information into the field below. Your entries will be displayed when you Submit the form.</p>
 	
-	<form:form action="processXSS.html" commandName="message" method="post">
+	<form:form action="processXSS.html" modelAttribute="message" method="post">
 		<form:errors path="*" cssClass="error"/>
 
 		<p><b>General Goal(s):</b></p>

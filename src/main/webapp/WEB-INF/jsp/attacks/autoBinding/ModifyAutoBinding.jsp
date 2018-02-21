@@ -18,7 +18,7 @@
 			
 		<h2 class="subtitle"><c:out value="${order.username}"/>'s  <c:out value="${order.orderId}"/>  Order</h2>
 
-		<form:form action="updateAutoBinding.html" commandName="order">
+		<form:form action="updateAutoBinding.html" modelAttribute="order">
 		
 			<fieldset>
 				<form:errors path="*" cssClass="error"/>

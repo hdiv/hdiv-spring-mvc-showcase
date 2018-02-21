@@ -13,7 +13,7 @@
 		</a>
 		<h1>File Upload Example</h1>
 		
-		<form:form action="binding.html" method="POST" enctype="multipart/form-data" commandName="bean">
+		<form:form action="binding.html" method="POST" enctype="multipart/form-data" modelAttribute="bean">
 			<fieldset>
 				<c:if test="${not empty message}">
 					<div id="message" class="success"><c:out value="${message}"/></div>	  		

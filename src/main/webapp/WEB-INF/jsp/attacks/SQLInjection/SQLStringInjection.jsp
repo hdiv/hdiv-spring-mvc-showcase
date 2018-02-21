@@ -17,7 +17,7 @@
 		in all the accounts being displayed.</p>
 		<p>First, you must insert the username <b>ACID</b>. You will only see the data related to the username ACID.</p>
 		<p>Then, inserting the value <b>ACID' or '1'='1</b>, you will be able to see all the accounts.</p>
-		<form:form action="processSQLStringInjection.html" commandName="account" method="post">
+		<form:form action="processSQLStringInjection.html" modelAttribute="account" method="post">
 			<form:errors path="*" cssClass="error"/>
 			<p>
 				<label for="userId">Enter your last name:</label>
