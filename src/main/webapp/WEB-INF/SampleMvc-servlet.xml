@@ -26,7 +26,7 @@
 	<!--
 		- The controllers are autodetected POJOs labeled with the @Controller annotation.
 	-->
-	<context:component-scan base-package="org.hdiv.samples.mvc.controllers"/>
+	<context:component-scan base-package="org.hdivsamples.mvc.controllers"/>
 
 	<!--
 		- This bean resolves specific types of exceptions to corresponding logical 

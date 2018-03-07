@@ -1,4 +1,4 @@
-package org.hdiv.samples.mvc.bean;
+package org.hdivsamples.mvc.bean;
 
 import org.springframework.web.multipart.MultipartFile;
 

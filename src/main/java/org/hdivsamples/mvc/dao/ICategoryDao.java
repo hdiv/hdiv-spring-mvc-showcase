@@ -1,8 +1,8 @@
-package org.hdiv.samples.mvc.dao;
+package org.hdivsamples.mvc.dao;
 
 import java.util.List;
 
-import org.hdiv.samples.mvc.bean.Category;
+import org.hdivsamples.mvc.bean.Category;
 
 public interface ICategoryDao {
 

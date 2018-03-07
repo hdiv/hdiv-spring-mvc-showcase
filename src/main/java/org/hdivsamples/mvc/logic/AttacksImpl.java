@@ -1,15 +1,15 @@
-package org.hdiv.samples.mvc.logic;
+package org.hdivsamples.mvc.logic;
 
 import java.util.List;
 
-import org.hdiv.samples.mvc.bean.Account;
-import org.hdiv.samples.mvc.bean.Category;
-import org.hdiv.samples.mvc.bean.Order;
-import org.hdiv.samples.mvc.bean.Product;
-import org.hdiv.samples.mvc.dao.IAccountDao;
-import org.hdiv.samples.mvc.dao.ICategoryDao;
-import org.hdiv.samples.mvc.dao.IOrderDao;
-import org.hdiv.samples.mvc.dao.IProductDao;
+import org.hdivsamples.mvc.bean.Account;
+import org.hdivsamples.mvc.bean.Category;
+import org.hdivsamples.mvc.bean.Order;
+import org.hdivsamples.mvc.bean.Product;
+import org.hdivsamples.mvc.dao.IAccountDao;
+import org.hdivsamples.mvc.dao.ICategoryDao;
+import org.hdivsamples.mvc.dao.IOrderDao;
+import org.hdivsamples.mvc.dao.IProductDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

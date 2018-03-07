@@ -1,11 +1,11 @@
-package org.hdiv.samples.mvc.dao;
+package org.hdivsamples.mvc.dao;
 
 import java.sql.ResultSet;
 import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.hdiv.samples.mvc.bean.Order;
+import org.hdivsamples.mvc.bean.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;

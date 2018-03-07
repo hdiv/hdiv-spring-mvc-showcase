@@ -1,6 +1,6 @@
-package org.hdiv.samples.mvc.controllers;
+package org.hdivsamples.mvc.controllers;
 
-import org.hdiv.samples.mvc.bean.MultipartBean;
+import org.hdivsamples.mvc.bean.MultipartBean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

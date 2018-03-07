@@ -1,11 +1,11 @@
-package org.hdiv.samples.mvc.controllers;
+package org.hdivsamples.mvc.controllers;
 
 import java.util.List;
 
 import javax.validation.Valid;
 
-import org.hdiv.samples.mvc.bean.Account;
-import org.hdiv.samples.mvc.logic.AttacksExampleFacade;
+import org.hdivsamples.mvc.bean.Account;
+import org.hdivsamples.mvc.logic.AttacksExampleFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Controller;

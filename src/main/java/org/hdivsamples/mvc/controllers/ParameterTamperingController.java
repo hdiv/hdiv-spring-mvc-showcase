@@ -1,9 +1,9 @@
-package org.hdiv.samples.mvc.controllers;
+package org.hdivsamples.mvc.controllers;
 
 import java.util.List;
 
-import org.hdiv.samples.mvc.bean.Order;
-import org.hdiv.samples.mvc.logic.AttacksExampleFacade;
+import org.hdivsamples.mvc.bean.Order;
+import org.hdivsamples.mvc.logic.AttacksExampleFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

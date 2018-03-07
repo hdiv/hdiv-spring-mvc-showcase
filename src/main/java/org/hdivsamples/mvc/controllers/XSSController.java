@@ -1,8 +1,8 @@
-package org.hdiv.samples.mvc.controllers;
+package org.hdivsamples.mvc.controllers;
 
 import javax.validation.Valid;
 
-import org.hdiv.samples.mvc.bean.Message;
+import org.hdivsamples.mvc.bean.Message;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;

@@ -1,4 +1,4 @@
-package org.hdiv.samples.mvc.bean;
+package org.hdivsamples.mvc.bean;
 
 import java.io.Serializable;
 
