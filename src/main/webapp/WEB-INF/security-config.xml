@@ -19,6 +19,7 @@
 
 	<security:authentication-manager>
 		<security:authentication-provider>
+			<security:password-encoder ref="passwordEncoder"/>
 			<security:user-service>
 				<security:user name="david" authorities="ROLE_USER,ROLE_ADMIN"
 					password="david" />
@@ -29,5 +30,7 @@
 			</security:user-service>
 		</security:authentication-provider>
 	</security:authentication-manager>
+
+	<bean id="passwordEncoder" class="org.springframework.security.crypto.password.NoOpPasswordEncoder" factory-method="getInstance" />
 
 </beans>
