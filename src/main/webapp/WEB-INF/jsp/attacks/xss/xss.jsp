@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
 <html>
 <head>
-	<title>Simple form using ActionForm</title>
+	<title>Simple form using ActionForm and link with XSS</title>
 	<%@ include file="/WEB-INF/jsp/template/head.jsp"%>
 </head>
 <body>
@@ -10,7 +10,9 @@
 	<a href="${url}">
 		<img src="${pageContext.request.contextPath}/resources/images/back-icon.png" alt="Return to examples page" class="back" />
 	</a>
-	<h1>Simple form using ActionForm</h1>
+	<h1>Simple form using ActionForm and link with XSS</h1>
+	
+	<h2>ActionForm</h2>
 	
 	<p>Enter information into the field below. Your entries will be displayed when you Submit the form.</p>
 	
@@ -28,6 +30,14 @@
 		<form:button>Submit</form:button>
 		</p>
 	</form:form>
+	
+	<h2>Link</h2>
+	<p>Use the "name" parameter to make an XSS attack</p>
+	<c:url value="processXSS.html" var="url">
+		<c:param name="msgText" value="ACID"/>
+	</c:url>
+	<a href="${url}">Link</a>
+	
 	
 	<%@ include file="/WEB-INF/jsp/template/footer.jsp"%>
 </body>
