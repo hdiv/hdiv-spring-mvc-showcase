@@ -32,7 +32,7 @@
 	</form:form>
 	
 	<h2>Link</h2>
-	<p>Use the "name" parameter to make an XSS attack</p>
+	<p>Use the "msgText" parameter to make an XSS attack</p>
 	<c:url value="processXSS.html" var="url">
 		<c:param name="msgText" value="ACID"/>
 	</c:url>
