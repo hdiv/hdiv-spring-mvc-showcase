@@ -6,7 +6,7 @@ http://www.hdiv.org/schema/hdiv http://www.hdiv.org/schema/hdiv/hdiv.xsd">
 
 	<hdiv:config excludedExtensions="css,png">
 		<hdiv:sessionExpired loginPage="/login.html" homePage="/"/>
-		<hdiv:startPages>/attacks/.*</hdiv:startPages>
+		<hdiv:startPages>/attacks/.*,/filedownload/.*,.*</hdiv:startPages>
 		<hdiv:startPages method="get">/,/login.html</hdiv:startPages>
 		<hdiv:startPages method="post">/j_spring_security_check,/logout.html</hdiv:startPages>
 		<hdiv:startParameters>_csrf</hdiv:startParameters>
