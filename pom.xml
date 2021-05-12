@@ -9,7 +9,7 @@
 
 	<properties>
 		<org.springframework-version>5.0.3.RELEASE</org.springframework-version>
-		<org.springsecurity-version>5.0.2.RELEASE</org.springsecurity-version>
+		<org.springsecurity-version>5.2.10.RELEASE</org.springsecurity-version>
 		<org.slf4j-version>1.7.25</org.slf4j-version>
 		<org.hdiv-version>3.4.0</org.hdiv-version>
 	</properties>
